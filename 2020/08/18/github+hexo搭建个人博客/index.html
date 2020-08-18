@@ -6,15 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>我的第二篇博客 | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="我的第二篇博客">
-<meta property="og:url" content="http://yoursite.com/2020/08/18/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/index.html">
+  <meta name="description" content="##标题 github+hexo搭建个人博客 1.安装nodejs:https:&#x2F;&#x2F;nodejs.org官网下载（下载LTS版本），一直点击下一步安装 2.windows系统下WIN+R打开命令行窗口（Windows操作系统下需要下载git，并配置git环境）全程可直接在git bash窗口下完成3.安装完成后可以通过-v命令查看是否安装成功4.借助npm包管理器进行安装hexo，为了提高安装速度">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2020/08/18/github+hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="##标题 github+hexo搭建个人博客 1.安装nodejs:https:&#x2F;&#x2F;nodejs.org官网下载（下载LTS版本），一直点击下一步安装 2.windows系统下WIN+R打开命令行窗口（Windows操作系统下需要下载git，并配置git环境）全程可直接在git bash窗口下完成3.安装完成后可以通过-v命令查看是否安装成功4.借助npm包管理器进行安装hexo，为了提高安装速度">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-08-18T12:40:41.000Z">
-<meta property="article:modified_time" content="2020-08-18T12:40:41.273Z">
+<meta property="article:published_time" content="2020-08-18T13:29:14.472Z">
+<meta property="article:modified_time" content="2020-08-18T13:29:14.473Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -152,27 +154,15 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-我的第二篇博客" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-github+hexo搭建个人博客" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      我的第二篇博客
-    </h1>
-  
-
-        
-        <a href="/2020/08/18/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2020-08-18T12:40:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-18</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>##标题 github+hexo搭建个人博客</p>
+<p>1.安装nodejs:<a target="_blank" rel="noopener" href="https://nodejs.org官网下载(下载lts版本),一直点击下一步安装/">https://nodejs.org官网下载（下载LTS版本），一直点击下一步安装</a></p>
+<p>2.windows系统下WIN+R打开命令行窗口（Windows操作系统下需要下载git，并配置git环境）全程可直接在git bash窗口下完成<br>3.安装完成后可以通过-v命令查看是否安装成功<br>4.借助npm包管理器进行安装hexo，为了提高安装速度，先利用npm安装淘宝的源<br>    命令：npm  install  -g(全局安装)  cnpm –registry=<a target="_blank" rel="noopener" href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a><br>5.cnpm 安装完成后，利用cnpm安装hexo<br>    命令：cnpm install  -g  hexo-cli<br>6.安装hexo完成后，建立一个空文件夹<br>    命令：mkdir  blog（文件夹名称）在搭建博客过程中出错直接将blog文件夹删掉重来即可<br>7.进入blog文件夹：<br>    命令：cd  blog<br>8.初始化博客<br>    命令：hexo init（成功的提醒：start blogging with hexo）<br>9.查看目录下的文件用dir命令，这时在blog目录下会自动生成文件<br>10.启动博客<br>    hexo  server（或者hexo s）通过提供的本地端口在浏览器可访问个人博客<br>11.新建文章：<br>    命令：hexo n（hexo new）“文章名称”<br>12.修改博文的内容，先进入文章所在的目录<br>    命令：（通过编辑器）vim  “博文名称.md”,进入编辑器以后按  I  进行插入<br>    编辑完成后按esc+shift+Z+Z进行保存和退出操作<br>13.hexo clean：清理hexo<br>14.hexo g  ：生成<br>15.将博客部署到github上：<br>    首先要有github账号，在github上新建仓库，名称必须为：yourusername.github.io<br>16.在blog目录下安装一个git的部署插件：<br>    命令：cnpm install –save hexo-deployer-git<br>17.安装完成后，设置_config.yml，使用编辑器打开vim  _config.yml,文件的最底部<br>    将type改成git（中间有空格），type下面一行写github仓库的地址：repo: <a target="_blank" rel="noopener" href="https://github.com/66-jvwj.github.io">https://github.com/66-jvwj.github.io</a><br>    再下面一行写branch： master<br>    然后保存退出<br>18.部署到远端，先在git八十命令行窗口设置密码和邮箱（命令：git  config  –global  user.email “youremail”和git  config  –global  user.name “yourname”）：<br>    命令：hexo d，中途输入github账号和密码，最后出现INFO  Deploy done: git成功<br>19.自定义主题：找到想到更换的主题<br>    命令：git clone <a target="_blank" rel="noopener" href="https://github.com/litten/hexo-theme-yilia.git">https://github.com/litten/hexo-theme-yilia.git</a>  themes/yilia(克隆到themes目录下)，再将其配置到_config.yml文件下，将theme：后面的主题改为yilia，保存退出即可</p>
+
       
 
       
@@ -251,7 +241,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/08/18/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/08/18/github+hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -266,8 +256,8 @@
 <nav id="article-nav">
   
   
-    <a href="/2020/08/18/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">我的第一篇文章</div>
+    <a href="/2020/08/18/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">我的第一篇博客文章</div>
       <i class="icon-circle-right"></i>
     </a>
   
